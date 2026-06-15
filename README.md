@@ -42,9 +42,32 @@ Permessi: la prima volta concedi l'accesso alla **Fotocamera** in
 
 ---
 
-## macOS (installazione)
+## macOS / Linux (installazione automatica)
 
-Tutti i comandi vanno eseguiti nella cartella del progetto.
+Sono inclusi due script che fanno tutto da soli (analoghi a quelli Windows).
+
+```bash
+./setup_unix.sh   # installa Python 3.12 se manca, crea .venv e installa le librerie
+./run_unix.sh     # avvia il programma
+```
+
+> Se gli script non sono eseguibili: `chmod +x setup_unix.sh run_unix.sh`.
+
+Cosa fa `setup_unix.sh`:
+- **macOS**: installa Python 3.12 con Homebrew (richiede Homebrew gia presente,
+  vedi https://brew.sh).
+- **Linux**: installa Python 3.12 con il gestore pacchetti rilevato
+  (`apt` con fallback al PPA deadsnakes, `dnf`) e le librerie di sistema per
+  OpenCV. Potrebbe chiedere la password `sudo`.
+
+Permessi: la prima volta concedi l'accesso alla **Fotocamera**
+(macOS: `Privacy e Sicurezza > Fotocamera`).
+
+---
+
+## macOS (installazione manuale)
+
+In alternativa allo script, tutti i comandi vanno eseguiti nella cartella del progetto.
 
 ### 1. Installa Python 3.12 (con Homebrew)
 
