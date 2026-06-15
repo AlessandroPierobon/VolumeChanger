@@ -42,6 +42,18 @@ Permessi: la prima volta concedi l'accesso alla **Fotocamera** in
 
 ---
 
+## Avvio con doppio clic (senza terminale)
+
+- **macOS**: fai doppio clic su **`Avvia VolumeChanger.command`**. Al primo
+  avvio esegue da solo il setup (installazione componenti), poi lancia il
+  programma. Le volte successive parte direttamente.
+- **Windows**: fai doppio clic su **`run_windows.bat`** (dopo aver eseguito una
+  volta `setup_windows.bat`).
+
+> Nota macOS: la prima volta, se compare l'avviso di sicurezza, fai clic destro
+> sul file > **Apri** > **Apri**. In alternativa: `Impostazioni di Sistema >
+> Privacy e Sicurezza > Apri comunque`.
+
 ## macOS / Linux (installazione automatica)
 
 Sono inclusi due script che fanno tutto da soli (analoghi a quelli Windows).
